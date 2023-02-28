@@ -63,3 +63,52 @@ ul {
   font-weight: 500;
   text-transform: capitalize;
 }
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.home-info {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social li {
+  font-size: 25px;
+}
+
+.home {
+  text-align: left;
+}
+
+.social .linkedin {
+  color: #0766c2;
+}
+
+.social .git {
+  color: #22272f;
+}
+
+.home h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.home h5 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.home p {
+  font-size: 20px;
+}

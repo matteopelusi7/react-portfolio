@@ -1,9 +1,10 @@
 import React from 'react'
+import Jumbo from './Jumbo'
 
 const Main = () => {
   return (
-    <div>
-        
+    <div className='container'>
+      <Jumbo />
     </div>
   )
 }
