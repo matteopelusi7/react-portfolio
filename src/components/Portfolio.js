@@ -1,8 +1,10 @@
 import React from 'react'
 import spotify from '../img/spotify.PNG'
 import boolzap from '../img/boolzap.PNG'
+import playstation from '../img/playstation.png'
+import nicecream from '../img/nicecream.png'
 import { BsArrowRightShort } from "react-icons/bs";
-import { FaHtml5, FaCss3Alt, FaVuejs } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaVuejs, FaReact } from "react-icons/fa";
 
 const Portfolio = () => {
   return (
@@ -47,16 +49,33 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className='card'>
-                <img src={spotify} alt="" />
+                <img src={playstation} alt="" />
                 <div className='overlay'>
-                    <p className='title'>Spotify</p>
+                    <p className='title'>Playstation Store</p>
                     <p className='tec'>Tecnologie Utilizzate:</p>
                     <div className='icon'>
                         <FaHtml5 className='html' />
                         <FaCss3Alt className='css' />
                     </div>
                     <button className='button'>
-                        <a href="">
+                        <a href="https://playstation-1.netlify.app/">
+                            Visita il sito
+                            <BsArrowRightShort />
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div className='card'>
+                <img src={nicecream} alt="" />
+                <div className='overlay'>
+                    <p className='title'>Nice Cream</p>
+                    <p className='tec'>Tecnologie Utilizzate:</p>
+                    <div className='icon'>
+                        <FaReact className='react' />
+                        <FaCss3Alt className='css' />
+                    </div>
+                    <button className='button'>
+                        <a href="https://react-nice-cream.netlify.app/">
                             Visita il sito
                             <BsArrowRightShort />
                         </a>
