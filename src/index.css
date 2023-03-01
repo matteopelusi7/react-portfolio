@@ -202,6 +202,8 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 70px;
+  margin-top: 20px;
 }
 
 .card-container .card {
@@ -271,4 +273,24 @@ ul {
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
+}
+
+.css {
+  color: #2865f1;
+}
+
+.html {
+  color: #f16524;
+}
+
+.javascript {
+  color: #f7e017;
+}
+
+.vue {
+  color: #3eb984;
+}
+
+.react {
+  color: #61dbfb;
 }
