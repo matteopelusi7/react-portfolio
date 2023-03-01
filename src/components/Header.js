@@ -11,8 +11,8 @@ const Header = () => {
             <ul className='hamburger-list'>
                 <li>Home</li>
                 <li>About</li>
+                <li>portfolio</li>
                 <li>Skills</li>
-                <li>Portfolio</li>
                 <li>Contatti</li>
             </ul>
         </nav>

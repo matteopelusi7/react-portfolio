@@ -1,3 +1,5 @@
+/* general */
+
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +24,8 @@ code {
   margin: auto;
 }
 
+/* progress */
+
 .progress {
   background-color: red;
   height: 40px;
@@ -39,6 +43,8 @@ code {
   margin-right: 8px;
 }
 
+/* header */
+
 ul {
   list-style: none;
   display: flex;
@@ -54,6 +60,8 @@ ul {
   margin: 20px;
 }
 
+/* jumbo */
+
 .img-container .img {
   width: 65px;
 }
@@ -62,6 +70,11 @@ ul {
   font-size: 23px;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.hamburger-list li:hover {
+  cursor: pointer;
+  color: red;
 }
 
 .home-container {
@@ -95,6 +108,10 @@ ul {
   color: #0766c2;
 }
 
+.social .linkedin:hover, .social .git:hover  {
+  opacity: 0.8;
+}
+
 .social .git {
   color: #22272f;
 }
@@ -107,8 +124,69 @@ ul {
 .home h5 {
   font-size: 20px;
   font-weight: 200;
+  margin-top: -25px;
 }
 
 .home p {
   font-size: 20px;
 }
+
+/* about */
+
+.container-experience {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.home-about {
+  text-align: center;
+}
+
+.experience img {
+  width: 50px;
+  border-radius: 7px;
+  background-color: lightgray;
+}
+
+.experience {
+  width: calc(100% / 3);
+}
+
+.info-experience {
+  display: flex;
+  justify-content: center;
+}
+
+.description-experience .name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.description-experience .name-experience {
+  font-size: 15px;
+  margin-top: -12px;
+}
+
+.description-experience .date {
+  font-size: 14px;
+  color: rgb(129, 129, 129);
+  margin-top: -10px;
+}
+
+.description-experience .description {
+  margin-top: -5px;
+  font-size: 15px;
+}
+
+.bar {
+  height: 2px;
+  width: 150px;
+  background-color: gray;
+  align-self: flex-start;
+  margin-top: 10%;
+}
+
+/* portfolio */
+
