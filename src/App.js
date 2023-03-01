@@ -11,6 +11,12 @@ function App() {
       </div>
       <Header />
       <Main />
+      <div className="footer">
+        <div className="container footer-cont">
+          <p>Copyright &copy; Matteo Pelusi 2023</p>
+          <p>Hancrafted with &hearts;</p>
+        </div>
+      </div>
     </div>
   );
 }

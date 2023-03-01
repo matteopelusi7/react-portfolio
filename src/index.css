@@ -29,6 +29,16 @@ a {
   color: currentColor;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
 /* progress */
 
 .progress {
@@ -293,4 +303,93 @@ ul {
 
 .react {
   color: #61dbfb;
+}
+
+/* skills */
+
+.container-skills {
+  margin-bottom: 70px;
+}
+
+.frontend li {
+  height: 80px;
+}
+
+.frontend li img {
+  height: 100%;
+}
+
+.frontend, .backend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.list {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* contact */
+
+.container-contact {
+  background-color: rgb(224, 224, 224);
+  padding-bottom: 60px;
+}
+
+.container-all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-contact {
+  text-align: left;
+}
+
+.info-contact h2, .where h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.info-contact h5 {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: -25px;
+}
+
+iframe{
+  width: 400px;
+  height: 250px;
+}
+
+.contact-social a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.where {
+  text-align: left;
+}
+
+.info-contact ul {
+  align-items: start;
+}
+
+/* footer */
+
+.footer {
+  background-color: red;
+  color: white;
+}
+
+.footer .footer-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

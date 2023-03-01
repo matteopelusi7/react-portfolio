@@ -4,7 +4,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Jumbo = () => {
   return (
-    <div className='home-container'>
+    <div className='home-container container'>
         <div className='home-info'>
             <ul className='social'>
                 <li>
