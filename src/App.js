@@ -6,12 +6,18 @@ import React, { useEffect, useState } from "react";
 function App() {
 
   const [theme, setTheme] = useState('light-mode');
+  const [button, setButton] = useState(true)
 
   const changeTheme = () => {
     if(theme === 'light-mode') {
       setTheme('dark-mode')
     } else {
       setTheme('light-mode')
+    }
+    if(button === true) {
+      setButton(false)
+    } else {
+      setButton(true)
     }
   }
 
@@ -26,7 +32,7 @@ function App() {
         <p>Sito in Sviluppo</p>
         <BsWrench />
       </div>
-      <Header changeTheme={changeTheme} />
+      <Header changeTheme={changeTheme} button={button} />
       <Main />
       <div className="footer">
         <div className="container footer-cont">

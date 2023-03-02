@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from "../img/1.png";
 import { FaBars, FaHamburger } from "react-icons/fa";
 
-const Header = ({changeTheme}) => {
+const Header = ({changeTheme, button}) => {
 
   const [show, setShow] = useState(false)
 
@@ -23,7 +23,7 @@ const Header = ({changeTheme}) => {
                 <a href='#portfolio'>portfolio</a>
                 <a href='#skills'>Skills</a>
                 <a href='#contact'>Contatti</a>
-                <button className='button-theme' onClick={()=> changeTheme()} type="">Cambia Tema</button>
+                <button className={button === true ? 'button-theme' : ' button-theme-2'} onClick={()=> changeTheme()} type=""></button>
             </ul>
         </nav>
             <ul className={show ? '' : 'hamburger-list-show'}>
@@ -32,7 +32,7 @@ const Header = ({changeTheme}) => {
                 <a href='#portfolio'>portfolio</a>
                 <a href='#skills'>Skills</a>
                 <a href='#contact'>Contatti</a>
-                <button className='button-theme' onClick={()=> changeTheme()} type="">Cambia Tema</button>
+                <button className='button-theme' onClick={()=> changeTheme()} type=""></button>
             </ul>
     </div>
   )

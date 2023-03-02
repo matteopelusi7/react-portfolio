@@ -2,7 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  transition: all 0.5ms ease-in-out;
+  transition: all 0.5s linear;
 }
 
 body {
@@ -39,13 +39,41 @@ code {
 }
 
 .button-theme {
-  border-radius: 5px;
-  padding: 5px 10px;
-  border: none;
-  background-color: var(--clr-red);
-  color: white;
-  align-self: center;
-  cursor: pointer;
+  width: 55px;
+  height: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.button-theme-2 {
+  width: 55px;
+  height: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.button-theme::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  bottom: 2px;
+  background-color: red;
+  width: 20px;
+  border-radius: 999px;
+}
+
+.button-theme-2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  bottom: 2px;
+  background-color: red;
+  width: 20px;
+  border-radius: 999px;
 }
 
 .container {
