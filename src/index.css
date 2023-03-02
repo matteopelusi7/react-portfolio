@@ -393,3 +393,89 @@ iframe{
   align-items: center;
   justify-content: space-between;
 }
+
+/* mediaquery */
+
+@media all and (max-width: 600px) {
+
+  .hamburger-list {
+    display: none;
+  }
+
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0 20px;
+  }
+
+  .home-info {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .home {
+    text-align: center;
+  }
+
+  .home-image {
+    margin-top: -30px;
+    margin-bottom: -50px;
+  }
+
+  .card-container .card {
+    width: 90%;
+    height: 200px;
+    position: relative;
+    border-radius: 4px;
+  }
+
+  .container-all {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  iframe{
+    width: 80%;
+    height: 200px;
+  }
+
+  .contact-social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-cont {
+    padding:  5px;
+  }
+  
+  .list li {
+    padding: 0 20px;
+  }
+
+  .container-experience {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bar {
+    height: 80px;
+    width: 2px;
+    background-color: gray;
+    align-self: center;
+    margin-bottom: 5%;
+  }
+
+}

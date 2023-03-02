@@ -14,7 +14,7 @@ function App() {
       <div className="footer">
         <div className="container footer-cont">
           <p>Copyright &copy; Matteo Pelusi 2023</p>
-          <p>Hancrafted with &hearts;</p>
+          <p>Handcrafted with &hearts;</p>
         </div>
       </div>
     </div>
