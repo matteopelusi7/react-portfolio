@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import map from '../img/map.png'
 
 const Contact = () => {
   return (
@@ -29,8 +30,7 @@ const Contact = () => {
                 <div>
                     <h2>Sono qui</h2>
                 </div>
-                {/* <iframe className='map' id="gmap_canvas" src="https://maps.google.com/maps?q=Pineto&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                </iframe> */}
+                <img className='map' src={map} alt="" />
             </div>
         </div>
     </div>

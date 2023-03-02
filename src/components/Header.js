@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 
 const Header = ({changeTheme, button}) => {
 
-  const [show, setShow] = useState(false)
+  // const [show, setShow] = useState(false)
 
   return (
     <div className='header container'>
@@ -13,11 +13,11 @@ const Header = ({changeTheme, button}) => {
             <div className='img-container'>
                 <img src={logo} alt="" className='img' />
             </div>
-            <div className='pr'>
+            {/* <div className='pr'>
               <button className='hamburger-menu' onClick={() => setShow(!show)}>
                 <FaBars />
               </button>
-            </div>
+            </div> */}
             <ul className='hamburger-list'>
                 <a href='#home'>Home</a>
                 <a href='#about'>About</a>
@@ -27,13 +27,13 @@ const Header = ({changeTheme, button}) => {
                 <button className={button === true ? 'button-theme' : ' button-theme-2'} onClick={()=> changeTheme()} type=""></button>
             </ul>
         </nav>
-            <ul className={show ? '' : 'hamburger-list-show'}>
+            <ul className='hamburger-list-show'>
                 <a href='#home'>Home</a>
                 <a href='#about'>About</a>
                 <a href='#portfolio'>portfolio</a>
                 <a href='#skills'>Skills</a>
                 <a href='#contact'>Contatti</a>
-                <button className='button-theme' onClick={()=> changeTheme()} type=""></button>
+                <button className={button === true ? 'button-theme' : ' button-theme-2'} onClick={()=> changeTheme()} type=""></button>
             </ul>
     </div>
   )
