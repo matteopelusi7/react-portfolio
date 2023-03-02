@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div className='container-contact'>
+    <div id='contact' className='container-contact'>
         <div className='container-all container'>
             <div className='info-contact'>
                 <div>

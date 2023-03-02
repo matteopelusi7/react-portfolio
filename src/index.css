@@ -1,5 +1,9 @@
 /* general */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -89,13 +93,13 @@ ul {
   width: 65px;
 }
 
-.hamburger-list li {
+.hamburger-list a {
   font-size: 23px;
   font-weight: 500;
   text-transform: capitalize;
 }
 
-.hamburger-list li:hover {
+.hamburger-list a:hover {
   cursor: pointer;
   color: red;
 }
@@ -421,13 +425,13 @@ iframe{
     flex-direction: column;
   }
 
-  .hamburger-list-show li {
+  .hamburger-list-show a {
     font-size: 23px;
     font-weight: 500;
     text-transform: capitalize;
   }
 
-  .hamburger-list-show li:hover {
+  .hamburger-list-show a:hover {
     cursor: pointer;
     color: red;
   }

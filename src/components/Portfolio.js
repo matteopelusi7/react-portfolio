@@ -13,7 +13,7 @@ import { SiJavascript } from "react-icons/si";
 
 const Portfolio = () => {
   return (
-    <div className='porfolio container'>
+    <div id='portfolio' className='porfolio container'>
         <div className='home home-about portfolio container'>
             <h2>Portfolio</h2>
             <h5>Alcuni dei progetti che ho realizzato</h5>

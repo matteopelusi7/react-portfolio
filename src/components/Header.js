@@ -18,19 +18,19 @@ const Header = () => {
               </button>
             </div>
             <ul className='hamburger-list'>
-                <li>Home</li>
-                <li>About</li>
-                <li>portfolio</li>
-                <li>Skills</li>
-                <li>Contatti</li>
+                <a href='#home'>Home</a>
+                <a href='#about'>About</a>
+                <a href='#portfolio'>portfolio</a>
+                <a href='#skills'>Skills</a>
+                <a href='#contact'>Contatti</a>
             </ul>
         </nav>
             <ul className={show ? '' : 'hamburger-list-show'}>
-                <li>Home</li>
-                <li>About</li>
-                <li>portfolio</li>
-                <li>Skills</li>
-                <li>Contatti</li>
+                <a href='#home'>Home</a>
+                <a href='#about'>About</a>
+                <a href='#portfolio'>portfolio</a>
+                <a href='#skills'>Skills</a>
+                <a href='#contact'>Contatti</a>
             </ul>
     </div>
   )
