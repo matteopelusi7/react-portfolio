@@ -75,6 +75,14 @@ ul {
   margin: 20px;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger-list-show {
+  display: none;
+}
+
 /* jumbo */
 
 .img-container .img {
@@ -398,8 +406,35 @@ iframe{
 
 @media all and (max-width: 600px) {
 
+  .hamburger-menu {
+    display: block;
+  }
+
   .hamburger-list {
     display: none;
+  }
+
+  .hamburger-list-show {
+    display: block;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+  }
+
+  .hamburger-list-show li {
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .hamburger-list-show li:hover {
+    cursor: pointer;
+    color: red;
+  }
+
+  .pr {
+    display: flex;
+    flex-direction: column;
   }
 
   .home-container {
