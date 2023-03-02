@@ -443,7 +443,7 @@ ul {
   margin-top: -25px;
 }
 
-iframe{
+.map{
   width: 400px;
   height: 250px;
 }
@@ -555,7 +555,7 @@ iframe{
     justify-content: space-between;
   }
 
-  iframe{
+  .map{
     width: 80%;
     height: 200px;
   }
