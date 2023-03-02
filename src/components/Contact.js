@@ -29,8 +29,8 @@ const Contact = () => {
                 <div>
                     <h2>Sono qui</h2>
                 </div>
-                <iframe className='map' id="gmap_canvas" src="https://maps.google.com/maps?q=Pineto&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                </iframe>
+                {/* <iframe className='map' id="gmap_canvas" src="https://maps.google.com/maps?q=Pineto&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe> */}
             </div>
         </div>
     </div>
