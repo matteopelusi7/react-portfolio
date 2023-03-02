@@ -2,12 +2,14 @@
 
 html {
   scroll-behavior: smooth;
+  transition: all 0.5ms ease-in-out;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #F3F3F3;
+  background-color: var(--bg-color);
+  color: var(--clr-white-black);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -18,6 +20,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.light-mode {
+  --clr-red: red;
+  --clr-white-black: #222;
+  --bg-color: #F3F3F3;
+  --git-hub: #22272f;
+  --contact: rgb(224, 224, 224);
+}
+
+.dark-mode {
+  --clr-red: red;
+  --clr-white-black: #d4d3d3;
+  --bg-color: #181a1b;
+  --git-hub: white;
+  --contact: #2f2f2f;
+}
+
+.button-theme {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--clr-red);
+  color: white;
+  align-self: center;
+  cursor: pointer;
 }
 
 .container {
@@ -93,6 +121,11 @@ ul {
   width: 65px;
 }
 
+.hamburger-list {
+  display: flex;
+  align-items: center;
+}
+
 .hamburger-list a {
   font-size: 23px;
   font-weight: 500;
@@ -140,7 +173,7 @@ ul {
 }
 
 .social .git {
-  color: #22272f;
+  color: var(--git-hub);
 }
 
 .home h2 {
@@ -350,7 +383,7 @@ ul {
 /* contact */
 
 .container-contact {
-  background-color: rgb(224, 224, 224);
+  background-color: var(--contact);
   padding-bottom: 60px;
 }
 

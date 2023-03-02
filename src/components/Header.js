@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import logo from "../img/logo.png";
+import logo from "../img/1.png";
 import { FaBars, FaHamburger } from "react-icons/fa";
 
-const Header = () => {
+const Header = ({changeTheme}) => {
 
   const [show, setShow] = useState(false)
 
@@ -23,6 +23,7 @@ const Header = () => {
                 <a href='#portfolio'>portfolio</a>
                 <a href='#skills'>Skills</a>
                 <a href='#contact'>Contatti</a>
+                <button className='button-theme' onClick={()=> changeTheme()} type="">Cambia Tema</button>
             </ul>
         </nav>
             <ul className={show ? '' : 'hamburger-list-show'}>
@@ -31,6 +32,7 @@ const Header = () => {
                 <a href='#portfolio'>portfolio</a>
                 <a href='#skills'>Skills</a>
                 <a href='#contact'>Contatti</a>
+                <button className='button-theme' onClick={()=> changeTheme()} type="">Cambia Tema</button>
             </ul>
     </div>
   )

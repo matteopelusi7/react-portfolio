@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../img/image.png'
+import image from '../img/2.png'
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Jumbo = () => {
