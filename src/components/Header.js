@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from "../img/1.png";
-import { FaBars } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
 
 
 const Header = ({changeTheme, button}) => {
