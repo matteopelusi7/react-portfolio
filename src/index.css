@@ -273,7 +273,7 @@ ul {
   height: 2px;
   width: 150px;
   background-color: gray;
-  align-self: flex-start;
+  /* align-self: self-start; */
   margin-top: 10%;
 }
 
