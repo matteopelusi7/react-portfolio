@@ -353,6 +353,10 @@ ul {
   border: none;
 }
 
+.card .button:hover {
+  background-color: rgb(255, 68, 68);
+}
+
 .button a {
   display: flex;
   align-items: center;
@@ -578,12 +582,36 @@ ul {
     flex-direction: column;
   }
 
+  .experience {
+    width: 80%;
+    padding: 0 10px;
+  }
+
   .bar {
     height: 80px;
     width: 2px;
     background-color: gray;
     align-self: center;
     margin-bottom: 5%;
+  }
+
+  .overlay .title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .overlay .tec {
+    font-size: 14px;
+    margin-top: -15px;
+  }
+
+  .card .icon {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
   }
 
 }

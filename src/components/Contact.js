@@ -8,7 +8,7 @@ const Contact = () => {
         <div className='container-all container'>
             <div className='info-contact'>
                 <div>
-                    <h2>Contattami</h2>
+                    <h2>Contatti</h2>
                     <h5>Dove puoi contattarmi</h5>
                 </div>
                 <ul className='social contact-social'>
