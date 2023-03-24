@@ -7,9 +7,10 @@ import discord from '../img/discord.png'
 import dropbox from '../img/dropbox.png'
 import proj from '../img/proj.png'
 import wikidrink from '../img/wikidrink.png'
+import pickme from '../img/pickme.png'
 import { BsArrowRightShort } from "react-icons/bs";
 import { FaHtml5, FaCss3Alt, FaVuejs, FaReact } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiRedux } from "react-icons/si";
 
 const Portfolio = () => {
   return (
@@ -153,6 +154,25 @@ const Portfolio = () => {
                     </div>
                     <button className='button'>
                         <a href="https://wiki-drink.netlify.app/">
+                            Visita il sito
+                            <BsArrowRightShort />
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div className='card'>
+                <img src={pickme} alt="" />
+                <div className='overlay'>
+                    <p className='title'>Pick Me</p>
+                    <p className='tec'>Tecnologie Utilizzate:</p>
+                    <div className='icon'>
+                        <SiRedux className='redux' />
+                        <FaReact className='react' />
+                        <FaCss3Alt className='css' />
+                        <SiJavascript className='javascript' />
+                    </div>
+                    <button className='button'>
+                        <a href="https://redux-react-pick-me.netlify.app/">
                             Visita il sito
                             <BsArrowRightShort />
                         </a>
