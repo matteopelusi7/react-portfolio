@@ -1,103 +1,95 @@
-import React from "react";
+import {
+  SiHtml5,
+  SiCss3,
+  SiSass,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiRedux,
+  SiNextdotjs,
+  SiVuedotjs,
+  SiJquery,
+  SiBootstrap,
+  SiHandlebarsdotjs,
+  SiNodedotjs,
+  SiMongodb,
+  SiPhp,
+  SiLaravel,
+  SiMysql,
+  SiPhpmyadmin,
+  SiWordpress,
+  SiGit,
+  SiGithub,
+  SiNpm,
+  SiComposer,
+} from "react-icons/si";
+
+const groups = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "HTML5", icon: <SiHtml5 />, color: "#e34f26" },
+      { name: "CSS3", icon: <SiCss3 />, color: "#1572b6" },
+      { name: "SCSS", icon: <SiSass />, color: "#cc6699" },
+      { name: "JavaScript", icon: <SiJavascript />, color: "#f0db4f" },
+      { name: "TypeScript", icon: <SiTypescript />, color: "#3178c6" },
+      { name: "React", icon: <SiReact />, color: "#61dafb" },
+      { name: "Redux", icon: <SiRedux />, color: "#764abc" },
+      { name: "Next.js", icon: <SiNextdotjs />, color: "currentColor" },
+      { name: "Vue.js", icon: <SiVuedotjs />, color: "#42b883" },
+      { name: "jQuery", icon: <SiJquery />, color: "#0769ad" },
+      { name: "Bootstrap", icon: <SiBootstrap />, color: "#7952b3" },
+      { name: "Handlebars", icon: <SiHandlebarsdotjs />, color: "#f0772b" },
+    ],
+  },
+  {
+    title: "Backend & Database",
+    skills: [
+      { name: "Node.js", icon: <SiNodedotjs />, color: "#5fa04e" },
+      { name: "PHP", icon: <SiPhp />, color: "#777bb4" },
+      { name: "Laravel", icon: <SiLaravel />, color: "#ff2d20" },
+      { name: "MongoDB", icon: <SiMongodb />, color: "#47a248" },
+      { name: "MySQL", icon: <SiMysql />, color: "#4479a1" },
+      { name: "phpMyAdmin", icon: <SiPhpmyadmin />, color: "#f89c0e" },
+      { name: "WordPress", icon: <SiWordpress />, color: "#21759b" },
+    ],
+  },
+  {
+    title: "Strumenti",
+    skills: [
+      { name: "Git", icon: <SiGit />, color: "#f05032" },
+      { name: "GitHub", icon: <SiGithub />, color: "currentColor" },
+      { name: "NPM", icon: <SiNpm />, color: "#cb3837" },
+      { name: "Composer", icon: <SiComposer />, color: "#885630" },
+    ],
+  },
+];
 
 const Skills = () => {
   return (
-    <div id="skills" className="container">
-      <div className="home home-about portfolio container">
+    <section id="skills" className="container section">
+      <div className="section-title">
         <h2>Skills</h2>
         <h5>Le mie conoscenze tecniche</h5>
       </div>
       <div className="container-skills">
-        <ul className="frontend">
-          <div className="list">
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/260px-HTML5_logo_and_wordmark.svg.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/100px-CSS3_logo_and_wordmark.svg.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/180px-Unofficial_JavaScript_logo_2.svg.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
-                alt=""
-              ></img>
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/100px-React-icon.svg.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://cdn.worldvectorlogo.com/logos/redux.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/100px-Vue.js_Logo_2.svg.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/100px-Bootstrap_logo.svg.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/260px-PHP-logo.svg.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/100px-Laravel.svg.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/95/PhpMyAdmin_logo.png"
-                alt=""
-              />
-            </li>
+        {groups.map((group) => (
+          <div className="skill-group" key={group.title}>
+            <h3>{group.title}</h3>
+            <ul className="list">
+              {group.skills.map((skill) => (
+                <li key={skill.name} className="skill">
+                  <span className="skill-icon" style={{ color: skill.color }}>
+                    {skill.icon}
+                  </span>
+                  <span>{skill.name}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-        </ul>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

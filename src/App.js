@@ -1,45 +1,39 @@
 import Header from "./components/Header";
-import { BsWrench } from "react-icons/bs";
 import Main from "./components/Main";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
+const getInitialTheme = () => {
+  try {
+    const saved = localStorage.getItem("theme");
+    if (saved === "light-mode" || saved === "dark-mode") return saved;
+  } catch (e) {}
+  return "light-mode";
+};
 
 function App() {
-
-  const [theme, setTheme] = useState('light-mode');
-  const [button, setButton] = useState(true)
+  const [theme, setTheme] = useState(getInitialTheme);
 
   const changeTheme = () => {
-    if(theme === 'light-mode') {
-      setTheme('dark-mode')
-    } else {
-      setTheme('light-mode')
-    }
-    if(button === true) {
-      setButton(false)
-    } else {
-      setButton(true)
-    }
-  }
+    setTheme(theme === "light-mode" ? "dark-mode" : "light-mode");
+  };
 
   useEffect(() => {
     document.documentElement.className = theme;
-    console.log(theme)
+    try {
+      localStorage.setItem("theme", theme);
+    } catch (e) {}
   }, [theme]);
 
   return (
-    <div className={theme === 'light-mode' ? 'App light-mode' : 'App dark-mode'}>
-      <div className='progress'>
-        <p>Sito in Sviluppo</p>
-        <BsWrench />
-      </div>
-      <Header changeTheme={changeTheme} button={button} />
+    <div className={`App ${theme}`}>
+      <Header changeTheme={changeTheme} isDark={theme === "dark-mode"} />
       <Main />
-      <div className="footer">
+      <footer className="footer">
         <div className="container footer-cont">
-          <p>Copyright &copy; Matteo Pelusi 2023</p>
+          <p>Copyright &copy; Matteo Pelusi {new Date().getFullYear()}</p>
           <p>Handcrafted with &hearts;</p>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
